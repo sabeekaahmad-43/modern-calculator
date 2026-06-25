@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Calculator</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <main class="calculator" id="calculator">
+
+    <!-- Display -->
+    <section class="display" aria-label="Calculator display">
+      <div class="display-history" id="history">&nbsp;</div>
+      <div class="display-main" id="display">0</div>
+    </section>
+
+    <!-- Keypad -->
+    <section class="keypad" aria-label="Calculator keys">
+
+      <button class="key key--util" data-action="clear">AC</button>
+      <button class="key key--util" data-action="delete" aria-label="Delete last digit">DEL</button>
+      <button class="key key--util" data-action="percent">%</button>
+      <button class="key key--operator" data-action="divide">÷</button>
+
+      <button class="key key--digit" data-digit="7">7</button>
+      <button class="key key--digit" data-digit="8">8</button>
+      <button class="key key--digit" data-digit="9">9</button>
+      <button class="key key--operator" data-action="multiply">×</button>
+
+      <button class="key key--digit" data-digit="4">4</button>
+      <button class="key key--digit" data-digit="5">5</button>
+      <button class="key key--digit" data-digit="6">6</button>
+      <button class="key key--operator" data-action="subtract">−</button>
+
+      <button class="key key--digit" data-digit="1">1</button>
+      <button class="key key--digit" data-digit="2">2</button>
+      <button class="key key--digit" data-digit="3">3</button>
+      <button class="key key--operator" data-action="add">+</button>
+
+      <button class="key key--digit key--zero" data-digit="0">0</button>
+      <button class="key key--digit" data-action="decimal">.</button>
+      <button class="key key--equals" data-action="equals" aria-label="Calculate result">=</button>
+
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
